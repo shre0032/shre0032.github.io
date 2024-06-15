@@ -1,8 +1,8 @@
 /* General Styling  */
 body {
-    font-family: Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: Helvetica, sans-serif; /* set font for the body*/
+    margin: 0; /*remove default margin*/
+    padding: 0; /*Remove default padding*/
     background-color: #aad4cf; /* soft background color */
 }
 
@@ -12,17 +12,17 @@ header{
     position: relative; /*for positioning the title*/
 }
 header img{
-    width: 100%;
-    height: auto; 
+    width: 100%; /*make the image full width*/
+    height: auto; /*Maintain aspect ratio*/
 
 } 
 
 header h1 {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translate(-50%,-50%); 
-    color: #fff; 
+    position: absolute; /*position the title absolutely within the header*/
+    bottom: 10px;  /*Position from the button*/
+    left: 50%; /*center horizontally*/
+    transform: translate(-50%,-50%); /*Adjust position*/
+    color: #fff;  
     font-size: 4.5em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /*subtle shadow effect*/
     padding: 10px;
@@ -33,24 +33,24 @@ nav {
 }
 
 nav ul {
-    list-style-type: none;
+    list-style-type: none; /*remove list style*/
     padding: 0;
     margin: 0;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex; /* use flexbox for alignment*/
+    justify-content: center; /* center items horizontally*/
+    align-items: center; /* center items vertically*/
 }
 
 nav ul li{
     display: inline;
-    margin: 0 180px;
+    margin: 0 180px; /* add horizontal margin */
 }
 
 nav ul li a {
     /* font-weight: bold; */
-    text-decoration: none;
-    color: black;
+    text-decoration: none; /* remove underline from links */
+    color: black; 
     font-size: 1.5em;
     padding: 0 15px;
     display: inline-block;
@@ -58,16 +58,16 @@ nav ul li a {
 }
 
 nav ul li:not(:last-child) a::after {
-    content: '|';
-    position: absolute;
-    right: -200px;
-    top: 0;
+    content: '|'; /* adding separator after each link except the last one*/
+    position: absolute; /* position the separator absolutely */
+    right: -200px; /* position from the right */
+    top: 0; 
     bottom: 0;
     
 }
 
 nav ul li a:hover {
-    text-decoration: underline ;
+    text-decoration: underline ; /*add underline on hover*/
 
 }
 
@@ -75,7 +75,7 @@ article {
     padding: 20px;
     text-align: justify;
     margin: 20px auto;
-    line-height: 1.6;
+    line-height: 1.6; /* setting line height*/
 }
 
 article p{
@@ -98,18 +98,17 @@ section {
 }
 
 section ul {
-    list-style-type: disc;
-    padding-left: 15px;
-
+    list-style-type: disc; /* set the list style type to disc */
+    padding-left: 15px; /* add padding to the left */
     font-weight: bold;
 }
 
 form{
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    border: 1px solid black;
+    display: flex; /*use flexbox for layout*/
+    flex-direction: column; /* set flex direction to column*/
+    gap: 10px; /*add gap between items*/
+    border: 1px solid black; /* add border */
 
 }
 
@@ -134,7 +133,7 @@ form input, form textarea {
 }
 
 .radio-buttons input[type="radio"] {
-    margin-right: 5px;
+    margin-right: 5px; /*adding margin to the right */
 }
 
 .radio-buttons span {
@@ -146,13 +145,13 @@ form button {
     font-size: 1em;
     background-color: #333;
     color: white;
-    border: none;
-    cursor: pointer;
+    border: none; /*remove border */
+    cursor: pointer; /*sets cursor to pointer*/
 }
 
 
 form button:hover {
-    background-color: #555;
+    background-color: #555; /*changes background color of the button on hover*/
 }
 
 /* Footer styles */

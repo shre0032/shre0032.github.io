@@ -3,37 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sudip midterm</title>
+    <title>Sudip midterm</title> <!--Title of the webpage-->
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css"> <!--linking external css file for styling-->
 </head>
 <body>
     <!-- header section with background iamge and title overlay -->
     <header id="home">
-        <img src="images/lone-starfish-wide.jpg" alt="Starfish">
-        <h1>Lone Starfish</h1>
+        <img src="images/lone-starfish-wide.jpg" alt="Starfish"> <!--header background image-->
+        <h1>Lone Starfish</h1> <!-- Title text in the header -->
     </header>
     <!-- main content section  -->
     <main>
         <!-- navigation bar including different nav links to display on the same page -->
         <nav>
             <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#story">STORY</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#home">HOME</a></li> <!-- navigation link to HOME section -->
+                <li><a href="#story">STORY</a></li> <!-- navigation link to STORY section -->
+                <li><a href="#contact">CONTACT</a></li> <!-- navigation link to CONTACT section -->
             </ul>
         </nav>
 
         <!-- Article section with text wrapping around image -->
          <article id="story">
-            <h2>Life of a Starfish</h2>
-            <img src="images/lone-starfish.jpg" alt="Starfish" class="article-image">
+            <h2>Life of a Starfish</h2> <!--Article Heading -->
+            <img src="images/lone-starfish.jpg" alt="Starfish" class="article-image"> <!-- image in the article -->
+
+            <!--Article content with text wrapping around the image -->
             <p>Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Starfish have tube feet operated by a hydraulic system and a mouth at the centre of the oral or lower surface.  With their appealing symmetrical shape, starfish have played a part in literature, legend, design and popular culture. They are opportunistic feeders and are mostly predators on benthic invertebrates. Several species have specialized feeding behaviours including eversion of their stomachs and suspension feeding. They have complex life cycles and can reproduce both sexually and asexually. Most can regenerate damaged parts or lost arms and they can shed arms as a means of defense. The Asteroidea occupy several significant ecological roles. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.</p>
          </article>
 
-         <!-- Facts section with lists -->
+         <!-- Facts section with unordered lists -->
           <section>
-          <h2>Facts About Starfish</h2>
+          <h2>Facts About Starfish</h2> 
           <ul>
             <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
             <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
@@ -44,36 +46,36 @@
 
         <!-- Section containing contact form contents and the option to visit the starfish -->
         <section id="contact"> 
-            <h2>Contact to learn more</h2>
-            <form action="#">
-                <label for="name">Your Name</label>  
-                <input type="text" id="name" name="name" required> 
+            <h2>Contact to learn more</h2> <!-- Section Heading -->
+            <form action="#"> <!-- Start of the contact form -->
+                <label for="name">Your Name</label>  <!-- Label for Name input -->
+                <input type="text" id="name" name="name" required>  <!-- Name input field -->
 
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email">Your Email</label> <!-- Label for Email input -->
+                <input type="email" id="email" name="email" required> <!-- Email input field -->
 
-                <label for="message">Your Message</label>
-                <textarea name="message" id="message" required></textarea>
+                <label for="message">Your Message</label> <!-- Label for Message textarea-->
+                <textarea name="message" id="message" required></textarea> <!-- Message textarea field-->
 
             <div class="radio-buttons">
-            <label for="visit-yes">Would you like to visit the Starfish?</label>    
+            <label for="visit-yes">Would you like to visit the Starfish?</label>   <!--Label for visit option--> 
             <div>
             <span>
-                <label for="visit-yes">Yes</label>
-                <input type="radio" id="visit-yes" name="visit" value="yes">
+                <label for="visit-yes">Yes</label> <!-- Label for Yes option -->
+                <input type="radio" id="visit-yes" name="visit" value="yes"> <!-- Radio button for Yes option -->
             </span>
             <span>
-                <label for="visit-no">No</label>
-                <input type="radio" id="visit-no" name="visit" value="no">
+                <label for="visit-no">No</label> <!-- Label for No option -->
+                <input type="radio" id="visit-no" name="visit" value="no"> <!-- Radio button for No option -->
             </span>
             <span>
-                <label for="visit-maybe">Maybe</label>
-                <input type="radio" id="visit-maybe" name="visit" value="maybe">
+                <label for="visit-maybe">Maybe</label> <!-- Label for Maybe option -->
+                <input type="radio" id="visit-maybe" name="visit" value="maybe"> <!-- Radio button for Maybe option -->
             </span>
             </div>
             </div>
             <!-- button to submit the form after filling the required fields -->
-            <button type="submit">SEND</button>
+            <button type="submit">SEND</button> <!-- Submit button for the form -->
             </form>
         </section>
     </main>
