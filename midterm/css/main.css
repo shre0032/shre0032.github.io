@@ -1,0 +1,144 @@
+/* General Styling  */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #aad4cf; /* soft background color */
+    /* line-height: 1.6; */
+}
+
+header{
+    text-align: center; /*bringing the header text to center*/
+    color: white; /*making the color of the text white */
+    /* padding: 20px 0; */
+    position: relative; /*for positioning the title*/
+}
+header img{
+    width: 100%;
+    height: auto; 
+    /* display: block; prevents image from being inline
+    margin: 0 auto; centers the image */
+} 
+
+header h1 {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    color: #fff; 
+    font-size: 4.5em;
+    text-shadow: rgba(0, 0, 0, 0.5); /*subtle shadow effect*/
+    padding: 10px;
+}
+
+nav {
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 200px;
+}
+
+nav ul li a {
+    /* font-weight: bold; */
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    padding: 0 15px;
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li:not(:last-child) a::after {
+    content: '|';
+    position: absolute;
+    right: -300px;
+    top: 0;
+    bottom: 0;
+    
+}
+
+nav ul li a:hover {
+    text-decoration: underline ;
+
+}
+
+article {
+    padding: 20px;
+    text-align: justify;
+    margin: 20px auto;
+}
+
+article p{
+    font-weight: bold;
+}
+
+.article-image {
+    float: left; /*image floats to the left*/
+    margin: 0 15px 15px 0;
+    width: 200px;
+    height: auto;
+
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+
+}
+section ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+form{
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    width: 100px;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
