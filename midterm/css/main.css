@@ -10,7 +10,7 @@ body {
     margin: 0 auto;     /*setting the margin to 0 for top and bottom and auto for left and right*/
     width: 900px;         /*width adjusted of the content page as per the cloned page*/
     background-color: #aad4cf;
-    border: 2px dotted blue; /*setting the dotted border around the whole page of 2 pixels */
+    border: 1px dashed blue; /*setting the dotted border around the whole page of 2 pixels */
 }
 
 header{
