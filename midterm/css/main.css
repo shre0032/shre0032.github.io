@@ -3,7 +3,14 @@ body {
     font-family: Helvetica, sans-serif; /* set font for the body*/
     margin: 0; /*remove default margin*/
     padding: 0; /*Remove default padding*/
-    background-color: #aad4cf; /* soft background color */
+    background-color: #2b403e; /* soft background color */
+}
+/* styling for the whole wrapper class */
+.wrapper {
+    margin: 0 auto;     /*setting the margin to 0 for top and bottom and auto for left and right*/
+    width: 900px;         /*width adjusted of the content page as per the cloned page*/
+    background-color: #aad4cf;
+    border: 2px dotted blue; /*setting the dotted border around the whole page of 2 pixels */
 }
 
 header{
@@ -19,11 +26,11 @@ header img{
 
 header h1 {
     position: absolute; /*position the title absolutely within the header*/
-    bottom: 10px;  /*Position from the button*/
+    bottom: -25px; /*position from the bottom*/
     left: 50%; /*center horizontally*/
     transform: translate(-50%,-50%); /*Adjust position*/
     color: #fff;  
-    font-size: 4.5em;
+    font-size: 3.5em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /*subtle shadow effect*/
     padding: 10px;
 }
@@ -44,7 +51,7 @@ nav ul {
 
 nav ul li{
     display: inline;
-    margin: 0 180px; /* add horizontal margin */
+    margin: 0 auto; /*add horizontal margin */
 }
 
 nav ul li a {
@@ -55,12 +62,13 @@ nav ul li a {
     padding: 0 15px;
     display: inline-block;
     position: relative;
+
 }
 
 nav ul li:not(:last-child) a::after {
     content: '|'; /* adding separator after each link except the last one*/
     position: absolute; /* position the separator absolutely */
-    right: -200px; /* position from the right */
+    right: -90px;/* position from the right */
     top: 0; 
     bottom: 0;
     
@@ -85,8 +93,8 @@ article p{
 .article-image {
     float: left; /*image floats to the left*/
     margin: 0 15px 15px 0;
-    width: 200px;
-    height: auto;
+    width: 400px;
+    height: 400px;
 
 }
 
@@ -157,8 +165,9 @@ form button:hover {
 /* Footer styles */
 footer {
     text-align: right;
-    padding: 20px;
-    margin: 20px;    
+    position: relative;
+    padding: 10px;
+    margin: 10px;    
+    bottom: 30px;
     font-weight: bold;
 }
-
