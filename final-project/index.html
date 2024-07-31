@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudip Final Project</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- open sans font link {google fonts}  -->
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/> -->
+
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+    <!-- Header Section involving two sections for navigation and welcome -->
+    <header>
+      <!-- Navigation Bar { flex } containing nav links and search item with background color 
+       logo to be included at the beginning-->
+      <nav>
+        <div class="logo">
+          <img src="images/logo.png" alt="Three Star Media Logo">
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="search-bar">
+          <input type="text" placeholder="Search"><i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </nav>
+      <!-- Welcome Section including image to be included using background url and rgba to get opacity including contents -->
+      <section class="welcome-section" id="home">
+        <div class="welcome-background">
+          <!-- image will be added in css using background url -->
+          <div class="welcome-contents">
+            <h1>Welcome to Three Star Media</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magnam
+              rerum voluptas iusto reiciendi quam nostrum ametique nihil
+              aboluptatem provident reque rerum maiores voluptate tempore.
+            </p>
+            <div class="first-caret">
+              <p>Connect with us <i class="fa-solid fa-caret-right"></i></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- About Us Section , float left image, contents overflow hidden -->
+    <section class="about-us" id="about">
+      <img src="images/about-us.jpg" alt="About us section" class="float-left">
+      <div class="about-content">
+      <h2>About Us</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero unde
+        repellendus exercitationem asperiores ducimus placeat, maiores soluta
+        nesciunt pariatur aliquam consequatur saepe sit praesentium laboriosam
+        perferendis amet ea nisi?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quae? A
+        quia accusamus, excepturi corrupti sint reiciendis soluta ad mollitia
+        quos non, natus perferendis rem sunt in exercitationem?
+      </p>
+      </div>
+    </section>
+
+    <!-- Our Services Section  displaying grid , gap in between , grid column , row for digital and marketing -->
+    <section class="our-services" id="services">
+      <h2>Our Services</h2>
+      <div class="service">
+        <!-- Digital Transformation -->
+        <div class="service-item">
+          <img src="images/digital.jpg" alt="Digital Transformation">
+          <h3>Digital Transformation</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius vel,
+            rem inventore quo tempora animi mollitia aeque error qui consectetur
+            in repellendus magnama vitae corporis quae deleniti explicabo nisi?
+          </p>
+          <div class="second-carret">
+            <p>Digital Plans <i class="fa-solid fa-caret-right"></i></p>
+          </div>
+        </div>
+        <!-- Marketing -->
+        <div class="service-item">
+          <img src="images/marketing.jpg" alt="Marketing">
+          <h3>Marketing</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius vel,
+            rem inventore quo tempora animi mollitia aeque error qui consectetur
+            in repellendus magnama vitae corporis quae deleniti explicabo nisi?
+          </p>
+          <div class="third-carret">
+            <p>Marketing Plans <i class="fa-solid fa-caret-right"></i></p>
+          </div>
+        </div>
+        <!-- Video Production -->
+        <div class="service-item">
+          <img src="images/video.jpg" alt="Video Production">
+          <h3>Video Production</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius vel,
+            rem inventore quo tempora animi mollitia aeque error qui consectetur
+            in repellendus magnama vitae corporis quae deleniti explicabo nisi?
+          </p>
+          <div class="forth-carret">
+            <p>Video Plans <i class="fa-solid fa-caret-right"></i></p>
+          </div>
+        </div>
+        <!-- Web Development -->
+        <div class="service-item">
+          <img src="images/web.jpg" alt="Web Development">
+          <h3>Web Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius vel,
+            rem inventore quo tempora animi mollitia aeque error qui consectetur
+            in repellendus magnama vitae corporis quae deleniti explicabo nisi?
+          </p>
+          <div class="fifth-carret">
+            <p>Web Plans <i class="fa-solid fa-caret-right"></i></p>
+          </div>
+        </div>
+        <!-- Print -->
+        <div class="service-item">
+          <img src="images/print.jpg" alt="Print">
+          <h3>Print</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius vel,
+            rem inventore quo tempora animi mollitia aeque error qui consectetur
+            in repellendus magnama vitae corporis quae deleniti explicabo nisi?
+          </p>
+          <div class="sixth-carret">
+            <p>Print Plans <i class="fa-solid fa-caret-right"></i></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Vision Section with background url 100% width -->
+    <section class="our-vision">
+      <!-- image will be added in css using background url -->
+      <h2>Our Vision</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eos voluptatem
+        deleniti iure id, accusantium rerum est commodi veniam tempora ipsam
+        officiis fugiat saepe, velit alias exercitationem delectus ex ea
+        laudantium.
+      </p>
+      <div class="seventh-carret">
+        <p>Learn More <i class="fa-solid fa-caret-right"></i></p>
+      </div>
+    </section>
+
+    <!-- Our Team Section containing two two members, using flexbox to wrap the elements, flexing 1 on .team-member, team-member:nthchild(2) to be row-reverse -->
+    <section class="our-team" id="team">
+      <h2>Our Team</h2>
+      <div class="team">
+        <!-- Team Member 1 -->
+        <div class="team-member">
+          <img src="images/john.jpg" alt="John Doe">
+          <div class="team-member-content">
+            <h3>John Doe</h3>
+            <p>CEO and Co-owner</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+              aspernatur ratione eum quod distinctio sint cumque litjai
+              sintique. Earum laudantium deleniti possimus?
+            </p>
+          </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="team-member">
+          <img src="images/bob.jpg" alt="Bob Rite">
+          <div class="team-member-content">
+            <h3>Bob Rite</h3>
+            <p>CFO and Co-owner</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+              aspernatur ratione eum quod distinctio sint cumque litjai
+              sintique. Earum laudantium deleniti possimus?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section , a single page containing form, location and hours of operation-->
+    <section class="contact-us" id="contact">
+      <h2>Contact Us</h2>
+
+      <!-- displaying flex and wrapping map and form -->
+      <div class="contact-container"> 
+        <!-- Contact Form , displaying flexdirection column -->
+        <div class="contact-form">
+          <h3>Send us a message</h3>
+          <form action="#" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        <!-- Location Map contains  map , iframe size needs to be adjusted in css-->
+        <div class="contact-info">
+          <h3>Location</h3>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89832.70183631836!2d-75.80068782319101!3d45.28272641222452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1722364875660!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- Hours of Operation-->
+      <div class="hours">
+        <h3>Hours of operation</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Days</th>
+              <th>Hours</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday - Friday</td>
+              <td>9 AM - 6 PM</td>
+            </tr>
+            <tr>
+              <td>Saturday - Sunday</td>
+              <td>Closed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Footer Section with background color-->
+    <footer>
+      <div class="footer-content">
+      <p>&copy; Copyright Three Star Media, 2020</p>
+      <p>All images are taken from <a href="https://unsplash.com">Unsplash</a></p>
+    </div>
+    </footer>
+  </body>
+</html>
+
