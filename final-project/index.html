@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sudip Final Project</title>
 
+    <link rel="stylesheet" href="css/reset.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <!-- open sans font link {google fonts}  -->
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/> -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
 
     <link rel="stylesheet" href="css/main.css">
   </head>
 
   <body>
+    <div class="wholewrapper">
     <!-- Header Section involving two sections for navigation and welcome -->
     <header>
       <!-- Navigation Bar { flex } containing nav links and search item with background color 
        logo to be included at the beginning-->
-      <nav>
+       <nav>
         <div class="logo">
           <img src="images/logo.png" alt="Three Star Media Logo">
         </div>
@@ -33,23 +36,25 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="search-bar">
-          <input type="text" placeholder="Search"><i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
         </div>
       </nav>
+      
       <!-- Welcome Section including image to be included using background url and rgba to get opacity including contents -->
       <section class="welcome-section" id="home">
         <div class="welcome-background">
           <!-- image will be added in css using background url -->
+          <div class="wrapper">
           <div class="welcome-contents">
             <h1>Welcome to Three Star Media</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magnam
-              rerum voluptas iusto reiciendi quam nostrum ametique nihil
-              aboluptatem provident reque rerum maiores voluptate tempore.
+              Lorem elit. Consequuntur iste neque quo a nam blanditi earumur libero, quae ducimus, quia inventore animi! Quis, ratione veritatis!t amet consectetur adipisicing elit. Voluptatum provident veritatis nihil aspernatur ea repudiandae nostrum non ut laborum, dicta sunt, cum impedit saepe iusto magnam delectus. Maxime libero perspiciatis laborum nihil.
             </p>
             <div class="first-caret">
-              <p>Connect with us <i class="fa-solid fa-caret-right"></i></p>
+              <p>Connect with us &nbsp; <i class="fa-solid fa-caret-right"></i></p>
             </div>
+          </div>
           </div>
         </div>
       </section>
@@ -57,6 +62,7 @@
 
     <!-- About Us Section , float left image, contents overflow hidden -->
     <section class="about-us" id="about">
+      <div class="wrapper-about">
       <img src="images/about-us.jpg" alt="About us section" class="float-left">
       <div class="about-content">
       <h2>About Us</h2>
@@ -66,11 +72,13 @@
         nesciunt pariatur aliquam consequatur saepe sit praesentium laboriosam
         perferendis amet ea nisi?
       </p>
+      <br>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quae? A
         quia accusamus, excepturi corrupti sint reiciendis soluta ad mollitia
         quos non, natus perferendis rem sunt in exercitationem?
       </p>
+    </div>
       </div>
     </section>
 
@@ -87,8 +95,8 @@
             rem inventore quo tempora animi mollitia aeque error qui consectetur
             in repellendus magnama vitae corporis quae deleniti explicabo nisi?
           </p>
-          <div class="second-carret">
-            <p>Digital Plans <i class="fa-solid fa-caret-right"></i></p>
+          <div class="carret">
+            <p>Digital Plans &nbsp; <i class="fa-solid fa-caret-right"></i></p>
           </div>
         </div>
         <!-- Marketing -->
@@ -100,8 +108,8 @@
             rem inventore quo tempora animi mollitia aeque error qui consectetur
             in repellendus magnama vitae corporis quae deleniti explicabo nisi?
           </p>
-          <div class="third-carret">
-            <p>Marketing Plans <i class="fa-solid fa-caret-right"></i></p>
+          <div class="carret">
+            <p>Marketing Plans &nbsp; <i class="fa-solid fa-caret-right"></i></p>
           </div>
         </div>
         <!-- Video Production -->
@@ -113,8 +121,8 @@
             rem inventore quo tempora animi mollitia aeque error qui consectetur
             in repellendus magnama vitae corporis quae deleniti explicabo nisi?
           </p>
-          <div class="forth-carret">
-            <p>Video Plans <i class="fa-solid fa-caret-right"></i></p>
+          <div class="carret">
+            <p>Video Plans &nbsp;<i class="fa-solid fa-caret-right"></i></p>
           </div>
         </div>
         <!-- Web Development -->
@@ -126,8 +134,8 @@
             rem inventore quo tempora animi mollitia aeque error qui consectetur
             in repellendus magnama vitae corporis quae deleniti explicabo nisi?
           </p>
-          <div class="fifth-carret">
-            <p>Web Plans <i class="fa-solid fa-caret-right"></i></p>
+          <div class="carret">
+            <p>Web Plans &nbsp;<i class="fa-solid fa-caret-right"></i></p>
           </div>
         </div>
         <!-- Print -->
@@ -139,8 +147,8 @@
             rem inventore quo tempora animi mollitia aeque error qui consectetur
             in repellendus magnama vitae corporis quae deleniti explicabo nisi?
           </p>
-          <div class="sixth-carret">
-            <p>Print Plans <i class="fa-solid fa-caret-right"></i></p>
+          <div class="carret">
+            <p>Print Plans&nbsp; <i class="fa-solid fa-caret-right"></i></p>
           </div>
         </div>
       </div>
@@ -148,6 +156,7 @@
 
     <!-- Our Vision Section with background url 100% width -->
     <section class="our-vision">
+      <div class="visionwrapper">
       <!-- image will be added in css using background url -->
       <h2>Our Vision</h2>
       <p>
@@ -156,43 +165,53 @@
         officiis fugiat saepe, velit alias exercitationem delectus ex ea
         laudantium.
       </p>
-      <div class="seventh-carret">
-        <p>Learn More <i class="fa-solid fa-caret-right"></i></p>
+      <div class="vision">
+        <p>Learn More &nbsp; <i class="fa-solid fa-caret-right"></i></p>
       </div>
+    </div>
+
     </section>
 
     <!-- Our Team Section containing two two members, using flexbox to wrap the elements, flexing 1 on .team-member, team-member:nthchild(2) to be row-reverse -->
     <section class="our-team" id="team">
       <h2>Our Team</h2>
+     
       <div class="team">
         <!-- Team Member 1 -->
         <div class="team-member">
           <img src="images/john.jpg" alt="John Doe">
           <div class="team-member-content">
             <h3>John Doe</h3>
-            <p>CEO and Co-owner</p>
+            <h4>CEO and Co-owner</h4>
+            <hr>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
               aspernatur ratione eum quod distinctio sint cumque litjai
-              sintique. Earum laudantium deleniti possimus?
+              sintique. Earum laudantium deleniti possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, asperiores.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, nobis consectetur ipsum sit tenetur fugit. Ipsum illum veniam aperiam nemo.
             </p>
           </div>
         </div>
 
+
         <!-- Team Member 2 -->
         <div class="team-member">
+        <div class="team-member-reverse">
           <img src="images/bob.jpg" alt="Bob Rite">
           <div class="team-member-content">
             <h3>Bob Rite</h3>
-            <p>CFO and Co-owner</p>
+            <h4>CFO and Co-owner</h4>
+            <hr>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
               aspernatur ratione eum quod distinctio sint cumque litjai
-              sintique. Earum laudantium deleniti possimus?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In impedit neque quam voluptatum assumenda voluptates temporibus deserunt eligendi vero porro.
+              sintique. Earum laudantium deleniti possimus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit obcaecati perferendis officiis maiores. Magni, cupiditate!
             </p>
-          </div>
+        </div>
         </div>
       </div>
+    </div>
     </section>
 
     <!-- Contact Us Section , a single page containing form, location and hours of operation-->
@@ -200,7 +219,6 @@
       <h2>Contact Us</h2>
 
       <!-- displaying flex and wrapping map and form -->
-      <div class="contact-container"> 
         <!-- Contact Form , displaying flexdirection column -->
         <div class="contact-form">
           <h3>Send us a message</h3>
@@ -214,16 +232,8 @@
             <button type="submit">Send</button>
           </form>
         </div>
-        <!-- Location Map contains  map , iframe size needs to be adjusted in css-->
-        <div class="contact-info">
-          <h3>Location</h3>
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89832.70183631836!2d-75.80068782319101!3d45.28272641222452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1722364875660!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-      </div>
-      <!-- Hours of Operation-->
+
+      <!-- Hours of Operation needs to be adjusted in css for colspan/border/width/padding/-->
       <div class="hours">
         <h3>Hours of operation</h3>
         <table>
@@ -245,15 +255,27 @@
           </tbody>
         </table>
       </div>
+
+        <!-- Location Map contains  map , iframe size needs to be adjusted in css-->
+        <div class="contact-info">
+        <h3>Location</h3>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89832.70183631836!2d-75.80068782319101!3d45.28272641222452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1722364875660!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+
+              
+              
     </section>
 
     <!-- Footer Section with background color-->
     <footer>
       <div class="footer-content">
-      <p>&copy; Copyright Three Star Media, 2020</p>
+      <p>&copy; Copyright Three Star Media, 2020</p><br>
       <p>All images are taken from <a href="https://unsplash.com">Unsplash</a></p>
     </div>
     </footer>
+  </div>
   </body>
 </html>
 

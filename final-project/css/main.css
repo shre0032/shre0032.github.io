@@ -1,0 +1,761 @@
+body {
+    font-family: 'Open Sans'; 
+    padding: 0;
+    margin: 0;
+    /* background: #8f8787; */
+}
+
+/* setting the total heigth of the page to 1200px  */
+
+.wholewrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+    
+/* nav section css  */
+nav {
+    background-color: #222; /* Dark background */
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Logo */
+.logo {
+     background-color: #c78c06;/* Gold background as shown in the mockup */
+    width: 100%; /* Full width */
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    height:150px;
+}
+
+.logo img {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 100px; /*adjusting the size if needed */
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.nav-links li {
+    margin: 40px 0; /* Adding spacing between each link */
+}
+
+/* Positioning Home Link */
+.nav-links li:first-child a {
+    position: absolute;
+    top: -40px; /* Adjusting to place within the gold background */
+    left: 50%;
+    transform: translateX(-50%); /*to place home link in the center of the related class*/
+    color: #222222; /* Dark color to match the mockup */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #c78c06; /* Gold color for other links */
+    font-size: 18px;
+}
+
+/* Search Bar */
+.search-bar {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-bar i {
+
+    background: #222222;
+    padding: 10px;
+    color: #c78c06; /* Gold color */
+    cursor: pointer;
+    border:1px solid #c78c06;
+    /* border-left: none; */
+
+}
+
+
+/* welcome section css codes  */
+
+.welcome-background {
+    background: url('../images/main-banner.jpg') ;
+    background-size: cover;
+    /* width: 100px; */
+
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    color: white; 
+    display: flex;
+    align-items: center;
+}
+
+.welcome-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /*Spread items vertically*/
+    box-sizing: border-box; /*padding is included in height */
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    height: 75%;
+
+}
+
+.welcome-contents h1{
+    font-weight: bold;
+    font-size: 4em;
+    line-height: 1.5;
+    margin: 20px 0;
+    padding: 20px 0;
+}
+
+.welcome-contents p{
+    padding-top: 20px;
+    font-size: 18px;
+
+    
+}
+
+.first-caret {
+    background: #c78c06;
+    width: 250px;
+    height: 100px;
+    /* padding: 10px; */
+    text-align: center;
+
+}
+
+.first-caret p{
+    color: #222;
+    font-size: 18px;
+}
+
+.first-caret p i {
+    font-size: 35px;
+}
+
+
+/* About us section css  */
+
+#about {
+    background: #ffe6ac;
+    width: 100%;
+}
+
+.wrapper-about {
+    padding: 10px;
+}
+#about img {
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.about-content {
+    padding: 20px 0;
+}
+
+.about-content h2 {
+    font-size: 3em;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.about-content p {
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+
+
+
+/* our services section css */
+.service {
+    padding: 15px;
+}
+
+#services h2 {
+    margin: 40px 0 20px 10px;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.service-item {
+    background: #ffe6ac;
+    margin-bottom: 20px;
+    padding-bottom: 50px; /* Ensures space for the button */
+    position: relative;
+}
+
+.service-item img {
+    width: 100%;
+}
+
+.service-item h3 {
+    font-weight: bold;
+    font-size: 2em;
+    padding: 30px;
+}
+
+.service-item p {
+    padding: 30px;
+    margin-bottom: 50px;
+
+}
+
+.carret {
+    position: absolute;
+    left: 30px;
+    bottom: 10px;
+    background: #222;
+    width: 250px;
+    color: white;
+    height: 100px;
+
+
+}
+
+.carret p {
+
+    align-items: center;
+    font-size: 18px;
+}
+
+.carret p i {
+    font-size: 35px;
+}
+
+
+
+/* our vision css codes  */
+
+.our-vision{
+    background: url(../images/vision.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+
+.visionwrapper {
+    padding: 20px;
+    color: white;
+}
+
+.our-vision h2 {
+    font-weight: bold;
+    font-size: 35px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.vision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    background: #222;
+    width: 250px;
+    color: white;
+    height: 100px;
+    /* text-align: right */
+    border: 1px solid #c78c06;
+}
+
+
+.our-vision p {
+    font-size: 20px;
+}
+.vision p i {
+    font-size: 35px;
+}
+
+/* our team section css */
+.our-team h2{
+    padding: 20px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.team{
+    padding: 20px;    
+}
+
+.team-member img{
+    width: 100%;
+}
+
+.team-member {
+    background: #ffe6ac;
+    margin-bottom: 20px;
+}
+
+.team-member-content h3{
+    font-weight: bold;
+    font-size: 28px;
+    padding: 20px 0 10px 20px;
+}
+
+.team-member-content h4 {
+    padding: 0 20px;
+    font-weight: bold;
+
+}
+
+.team-member-content hr {
+    border: 0;
+    height: 3px;
+    background-color: #c78c06;
+    margin: 10px 20px;
+}
+
+.team-member-content p {
+    padding: 20px;
+    line-height: 1.5;
+}
+
+
+/* contact-us , tables and location section css codes  */
+.contact-us {
+    padding: 20px;
+}
+
+.contact-us h2{
+    font-weight: bold;
+    font-size: 40px;
+    padding: 40px 0;
+}
+
+.contact-us h3 {
+    font-weight: bold;
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+/* contact-form  */
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contact-form label {
+    margin: 10px 0;
+    margin-right: 50px;
+    /* font-weight: bold; */
+}
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #222;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #c78c06;
+    font-size: 1em;
+    cursor: pointer;
+
+    /* border-radius: 5px; */
+    align-self: flex-start;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+
+/* Hours of Operation */
+.hours {
+    margin-top: 20px;
+}
+
+.hours table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.hours th,
+.hours td {
+    padding: 10px;
+    border: 1px solid #000000;
+    text-align: left;
+}
+
+.hours th {
+    background-color: #ffe6ac;
+    text-align: center;
+}
+
+.hours td {
+    background-color: #fff;
+}
+
+.map iframe {
+    width: 100%;
+    height: 50vh;
+}
+
+footer{
+    background: #222;
+    /* padding: 20px; */
+}
+
+.footer-content {
+    color: #c78c06;
+    font-size: 15px;
+    padding: 20px 20px;
+
+
+}
+
+/* footer css , bg color */
+
+.footer-content p a{
+    color: #c78c06;
+}
+
+
+/* desktop mock up now */
+
+
+@media screen and (min-width: 760px) {
+
+/* nav section css  */
+nav {
+    background-color: #222; /* Dark background */
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    position: relative;
+}
+
+/* Logo */
+.logo {
+    background-color: #222;
+    position: relative;
+}
+.logo img {
+    position: absolute;
+    left: 50px;
+}
+nav ul{
+
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li a {
+    padding: 10px;
+}
+
+
+/* Positioning Home Link */
+.nav-links li:first-child a {
+    /* position: absolute; */
+    top: 29px; /* Adjusting to place within the gold background */
+    left: -50px;
+    /* transform: translateX(-50%); to place home link in the center of the related class */
+    color: #c78c06; /* Dark color to match the mockup */
+    /* font-weight: bold; */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover{
+    background: #897544;
+}
+
+
+
+
+/* welcome section css */
+
+
+.welcome-background {
+    position: relative;
+}
+
+.welcome-contents {
+    position: absolute;
+    left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /*Spread items vertically*/
+    box-sizing: border-box; /*padding is included in height */
+    width: 90%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    height: 70%;
+
+}
+
+.welcome-contents h1{
+    font-size: 5em;
+}
+
+.welcome-contents p{
+    font-size: 16px;
+    padding-bottom: 20px ;
+}
+
+/* About us section css  */
+
+#about {
+    background: #ffe6ac;
+    width: 100%;
+}
+
+.wrapper-about {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;  
+}
+
+#about img {
+    width: 50%;
+    height: 300px ; /* Maintain the aspect ratio */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    padding-left: 20px;
+}
+
+.about-content {
+    width: 45%; /* Give space for the content beside the image */
+    padding: 0 30px;
+}
+
+.about-content h2 {
+    font-size: 3em;
+}
+
+.about-content p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+
+/* our services section css using grid  */
+/* General styles for service section */
+.our-services {
+    background-color: #fff;
+}
+
+.our-services h2 {
+    font-size: 2.5em;
+}
+
+.service {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Two equal-width columns */
+    grid-template-rows: repeat(2, 1fr); /* Three equal-height rows */
+    gap: 20px; /* Spacing between grid items */
+}
+
+/* Grid Item Styles */
+.service-item {
+    background-color: #ffe6ac;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.service-item h3 {
+    font-size: 1.8em;
+    padding-left: 10px;
+}
+
+.service-item p {
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.carret {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    width: 85%;
+}
+
+
+.carret p {
+    margin: 0;
+}
+
+.carret p i {
+    font-size: 20px;
+}
+
+/* Specific Grid Placement */
+.service-item:nth-child(1),
+.service-item:nth-child(2) {
+    grid-column: span 3; /* Each of these spans 1 column */
+    grid-row: span 1; /* Each of these spans 1 row */
+}
+
+.service-item:nth-child(3),
+.service-item:nth-child(4),
+.service-item:nth-child(5) {
+    grid-column: span 2; /* Each of these spans 1 column */
+    grid-row: span 1; /* Each of these spans 1 row */
+}
+
+
+/* our team section  */
+
+  
+  .team {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .team-member {
+    display: flex;
+    align-items: center;
+    background-color: #f8e9b7; /* Light yellow background */
+    margin-bottom: 0;
+  }
+  
+  .team-member img {
+    width: 50%;
+    object-fit: cover;
+  }
+  
+  .team-member-content {
+    width: 50%;
+    padding: 0 0px;
+  }
+  
+  .team-member h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .team-member h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .team-member hr {
+    margin: 10px 0;
+    margin-left: 20px;
+  }
+  
+  .team-member p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Reverse the order for the second team member */
+  .team-member-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+
+
+
+  /* contact form , location and hours of operation css using flex and order to place location above of the hours of operation */
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.contact-form {
+  width: 45%;
+  order: 1;
+}
+
+.contact-info {
+    position: absolute;
+    right: 50px;
+    top: 140px;
+    width: 45%;
+    order: 2;
+}
+
+.hours {
+  width: 100%;
+  margin-top: 20px;
+  order: 3;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #222;
+  color: #c78c06;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #555;
+}
+
+.map iframe {
+  width: 100%;
+  height: 400px;
+  border: 0;
+  border-radius: 5px;
+}
+}
